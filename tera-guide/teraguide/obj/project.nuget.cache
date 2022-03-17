@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rAwHY2vFeCMNe5x8HfezgdPUsjhZoaPiFcJHbsG180Kt+wCdaN3Bzwq0a5VYgMrtgiWVoA4Twu+a8cxAwGT9vQ==",
+  "dgSpecHash": "Ll0//wQEVL7qqpIi6dM3xEk1SZE01N0CtsnGX+gEq7o0RRkE1QR2SbhZGTAmSQXXcf+s+fWGEJpsJkYq52xkgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coolx\\source\\repos\\teraguide\\teraguide\\teraguide.csproj",
+  "projectFilePath": "C:\\Users\\coolx\\Documents\\GitHub\\tera-guide\\tera-guide\\teraguide\\teraguide.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coolx\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\coolx\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.3\\microsoft.aspnetcore.cryptography.internal.6.0.3.nupkg.sha512",

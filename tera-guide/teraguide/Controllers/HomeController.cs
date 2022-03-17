@@ -18,6 +18,11 @@ namespace teraguide.Controllers
             return View();
         }
 
+        public IActionResult Dungeons()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

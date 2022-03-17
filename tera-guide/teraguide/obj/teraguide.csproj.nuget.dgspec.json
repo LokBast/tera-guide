@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coolx\\source\\repos\\teraguide\\teraguide\\teraguide.csproj": {}
+    "C:\\Users\\coolx\\Documents\\GitHub\\tera-guide\\tera-guide\\teraguide\\teraguide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coolx\\source\\repos\\teraguide\\teraguide\\teraguide.csproj": {
+    "C:\\Users\\coolx\\Documents\\GitHub\\tera-guide\\tera-guide\\teraguide\\teraguide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coolx\\source\\repos\\teraguide\\teraguide\\teraguide.csproj",
+        "projectUniqueName": "C:\\Users\\coolx\\Documents\\GitHub\\tera-guide\\tera-guide\\teraguide\\teraguide.csproj",
         "projectName": "teraguide",
-        "projectPath": "C:\\Users\\coolx\\source\\repos\\teraguide\\teraguide\\teraguide.csproj",
+        "projectPath": "C:\\Users\\coolx\\Documents\\GitHub\\tera-guide\\tera-guide\\teraguide\\teraguide.csproj",
         "packagesPath": "C:\\Users\\coolx\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coolx\\source\\repos\\teraguide\\teraguide\\obj\\",
+        "outputPath": "C:\\Users\\coolx\\Documents\\GitHub\\tera-guide\\tera-guide\\teraguide\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
