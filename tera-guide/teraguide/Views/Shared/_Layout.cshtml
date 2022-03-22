@@ -1,57 +1,126 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - teraguide</title>
+    <title>@ViewData["Title"] - TeraGuide</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/teraguide.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">teraguide</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Новичкам</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Dungeons">Данжи</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Классы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Статьи</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                    <partial name="_LoginPartial" />
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid justify-content-between">
+                <!-- Left elements -->
+                <div class="d-flex">
+                    <!-- Brand -->
+                    <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+                        <img
+                            src="https://clipart-best.com/img/strawberry/strawberry-clip-art-6.png"
+                            height="40"
+                            alt="MDB Logo"
+                            loading="lazy"
+                            style="margin-top: 1px;"
+                        />
+                    </a>
+                    <svg class="youtube-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                    </svg>
                 </div>
+                <!-- Left elements -->
+
+                <!-- Center elements -->
+                <ul class="navbar-nav flex-row d-none d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Новичкам</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Данжи</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Рыцарь</a></li>
+                            <li><a class="dropdown-item" href="#">Крушитель</a></li>
+                            <li><a class="dropdown-item" href="#">Воин</a></li>
+                            <li><a class="dropdown-item" href="#">Убийца</a></li>
+                            <li><a class="dropdown-item" href="#">Берсерк</a></li>
+                            <li><a class="dropdown-item" href="#">Лучник</a></li>
+                            <li><a class="dropdown-item" href="#">Маг</a></li>
+                            <li><a class="dropdown-item" href="#">Жнец</a></li>
+                            <li><a class="dropdown-item" href="#">Инжинер</a></li>
+                            <li><a class="dropdown-item" href="#">Шиноби</a></li>
+                            <li><a class="dropdown-item" href="#">Валькирия</a></li>
+                            <li><a class="dropdown-item" href="#">Мистик</a></li>
+                            <li><a class="dropdown-item" href="#">Жрец</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Личные гайды игроков</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Классы</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Рыцарь</a></li>
+                            <li><a class="dropdown-item" href="#">Крушитель</a></li>
+                            <li><a class="dropdown-item" href="#">Воин</a></li>
+                            <li><a class="dropdown-item" href="#">Убийца</a></li>
+                            <li><a class="dropdown-item" href="#">Берсерк</a></li>
+                            <li><a class="dropdown-item" href="#">Лучник</a></li>
+                            <li><a class="dropdown-item" href="#">Маг</a></li>
+                            <li><a class="dropdown-item" href="#">Жнец</a></li>
+                            <li><a class="dropdown-item" href="#">Инжинер</a></li>
+                            <li><a class="dropdown-item" href="#">Шиноби</a></li>
+                            <li><a class="dropdown-item" href="#">Валькирия</a></li>
+                            <li><a class="dropdown-item" href="#">Мистик</a></li>
+                            <li><a class="dropdown-item" href="#">Жрец</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Личные гайды игроков</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Статьи</a>
+                    </li>
+                          <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Обсуждения</a>
+                    </li>
+                </ul>
+                <!-- Center elements -->
+
+                <!-- Right elements -->
+                <ul class="navbar-nav flex-row">
+                    <div class="d6">
+                        <form>
+                            <input type="text" placeholder="Поиск по сайту...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+
+                    <!-- Account -->
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <img
+                                src="/lib/bootstrap/icons-svg/icons/person.svg"
+                                class="filter-account"
+                                height="22"
+                                alt="Portrait of a Woman"
+                                loading="lazy"
+                            />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><partial name="_LoginPartial" /></a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>   
+                </ul>
+                <!-- Right elements -->
             </div>
         </nav>
     </header>
+     
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -63,6 +132,7 @@
             &copy; 2022 - teraguide - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

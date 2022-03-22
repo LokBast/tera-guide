@@ -1,0 +1,191 @@
+﻿/*--------------------------------*/
+/*-Наследуемый стиль всех страниц-*/
+/*--------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.navbar navbar-expand-lg navbar-light {
+    background-color: #24292E;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    padding: 0px 0
+}
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.hoverable:before {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+}
+
+body {
+    background-color: #24292E;
+    font-weight: 600;
+    text-align: center !important;
+    color: white;
+}
+
+/*-------------------------*/
+/*---Общий стиль невбара---*/
+/*-------------------------*/
+nav {
+    background: none !important;
+    text-transform: uppercase;
+}
+
+nav li a {
+    transition: 0.5s color ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #9D9D9D;
+}
+.navbar-light .navbar-nav .nav-link:visited {
+    color: #9D9D9D;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:active {
+    color: white;
+}
+
+.page-title {
+    opacity: 0.75 !important;
+}
+.container-fluid {
+    background-color: #1D2125;
+    font-weight: 600;
+    text-align: center !important;
+    color: white;
+}
+
+/*-------------------------*/
+/*------Cтрока поиска------*/
+/*-------------------------*/
+.d6 {
+    background: #1D2125;
+}
+
+.d6 form {
+    height: 42px;
+}
+
+.d6 input {
+    height: 100%;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background-color: transparent;
+    color: red;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.d6 input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #161B22;
+}
+
+.d6 button {
+    background: #1D2125;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.d6 button:before {
+    display: inline-block;
+    content: url(/lib/bootstrap/icons-svg/icons/search.svg);
+    filter: invert(70%) sepia(0%) saturate(12%) hue-rotate(92deg) brightness(84%) contrast(79%);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+}
+
+/*-------------------------*/
+/*------Подъем ссылок------*/
+/*-------------------------*/
+.nav-link {
+    display: inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    tranform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.nav-link:hover, .nav-link:hover:active, .nav-link:focus {
+    transform: translateY(-2px);
+}
+
+/*-------------------------*/
+/*-Значок ютуба через svg--*/
+/*-------------------------*/
+.youtube-icon {
+    width: 64px;
+    height: 64px;
+    fill: #861B2D;
+}
+
+.youtube-icon:hover {
+    fill: red;
+}
+
+/*-------------------------*/
+/*-Окрашивание svg значков-*/
+/*-------------------------*/
+.filter-account {
+    filter: invert(70%) sepia(0%) saturate(12%) hue-rotate(92deg) brightness(84%) contrast(79%);
+    position: absolute;
+}
+
+/*-------------------------*/
+/*---Стиль dropdown-menu---*/
+/*-------------------------*/
+.dropdown-menu {
+    color: #c68c45 !important;
+    background-color: #1D2125;
+}
+
+.dropdown-menu a {
+    color: #9D9D9D !important;
+    background-color: #1D2125;
+}
+
+.dropdown-menu a:hover {
+    color: white !important;
+    background-color: #1D2125;
+}
+
